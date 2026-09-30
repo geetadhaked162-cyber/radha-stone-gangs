@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Radha Stone Gangsa | Architectural Natural Stone &amp; Marble</title>
+
+  <!-- Google Fonts: Newsreader, Source Sans 3 & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Source+Sans+3:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#fbf9f4",
+            "surface-dim": "#dbdad5",
+            "surface-bright": "#fbf9f4",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f5f3ee",
+            "surface-container": "#f0eee9",
+            "surface-container-high": "#eae8e3",
+            "surface-container-highest": "#e4e2dd",
+            "on-surface": "#1b1c19",
+            "on-surface-variant": "#4d4541",
+            "outline": "#7e7570",
+            "outline-variant": "#cfc4be",
+            "primary": "#171615",
+            "on-primary": "#ffffff",
+            "primary-container": "#2c2a29",
+            "on-primary-container": "#95918f",
+            "secondary": "#6b5c4d",
+            "on-secondary": "#ffffff",
+            "secondary-container": "#f1dcc9",
+            "on-secondary-container": "#6f6051"
+          },
+          fontFamily: {
+            "headline": ["Newsreader", "serif"],
+            "body": ["Source Sans 3", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-surface font-body text-on-surface">
+
+  <!-- TOP HEADER (Transparent Luxury Navigation Bar: होम पेज, शॉप, प्रोडक्ट्स, डिटेल्स) -->
+  <header id="main-header" class="site-header">
+    <div class="h-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between gap-4">
+      <!-- Brand Logo -->
+      <a class="header-brand font-headline text-xl sm:text-2xl tracking-wider uppercase font-semibold whitespace-nowrap" href="#cutting-video">
+        Radha Stone Gangsa
+      </a>
+
+      <!-- 4 Requested Navigation Options -->
+      <nav class="flex items-center space-x-3 sm:space-x-7 text-xs sm:text-sm font-semibold tracking-wide">
+        <a class="nav-link" href="#cutting-video">होम पेज</a>
+        <a class="nav-link" href="#slab-specimen">शॉप</a>
+        <a class="nav-link" href="#collection">प्रोडक्ट्स</a>
+        <a class="nav-link" href="#about">डिटेल्स</a>
+      </nav>
+
+      <!-- Contact & Action Buttons -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <a class="hidden lg:inline-flex items-center gap-1.5 bg-[#25D366] text-white px-3.5 py-2 text-xs font-semibold uppercase tracking-wider hover:bg-[#20ba5a] transition-all shadow-sm hover:scale-105 whitespace-nowrap" href="https://wa.me/919414967074?text=Hello%20Radha%20Stone%20Gangsa,%20I%20am%20interested%20in%20your%20natural%20stone" target="_blank" rel="noopener">
+          <span class="material-symbols-outlined text-[16px]">chat</span>
+          <span>WhatsApp: +91 94149 67074</span>
+        </a>
+        <a class="inline-flex items-center justify-center bg-primary text-on-primary px-4 sm:px-5 py-2 text-xs font-semibold uppercase tracking-wider transition-all hover:bg-secondary shadow-sm hover:scale-105 whitespace-nowrap" href="#quote">
+          Get a Quote
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. HERO VIDEO CUTTING EXPERIENCE (Centerpiece with slight-scroll playback) -->
+  <section id="cutting-video" class="relative w-full h-[100vh] overflow-hidden bg-black flex items-center justify-center">
+    <!-- 210 Frame Canvas Player -->
+    <canvas id="stone-canvas" class="absolute inset-0 w-full h-full object-cover"></canvas>
+
+    <!-- White / Bright Initial Overlay: "Radha Stone Gangsa" (Fades away as soon as video plays) -->
+    <div id="intro-white-overlay" class="intro-white-overlay">
+      <div class="intro-card">
+        <span class="intro-tag">NATURAL SURFACES &bull; GANGSAW SAWS</span>
+        <h1 class="intro-brand">RADHA STONE GANGSA</h1>
+        <p class="intro-subtitle">Precision Diamond Blade Hydro-Slicing Raw Mountain Monoliths</p>
+        <div class="intro-scroll-prompt">
+          <span class="prompt-mouse">
+            <span class="prompt-wheel"></span>
+          </span>
+          <span class="prompt-text">Scroll slightly to play the cutting video &darr;</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN ARCHITECTURAL WEBSITE (From stitch_primestone_natural_surfaces) -->
+  <main class="w-full bg-surface">
+
+    <!-- 2. ABOUT OUR STONE (Material & Mastery) -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 py-20" id="about">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-xs uppercase font-semibold text-secondary tracking-widest">Material &amp; Mastery</span>
+          <h2 class="font-headline text-3xl lg:text-4xl text-on-surface">
+            Crafted by Nature, Perfected by Precision
+          </h2>
+          <p class="text-lg text-on-surface-variant font-light leading-relaxed">
+            We specialize in sourcing, gangsaw cutting, and supplying the finest natural stone for high-end residential, commercial, and architectural construction projects. Every slab is selected for its uncompromised density, structural integrity, and exquisite organic character.
+          </p>
+          <div class="grid grid-cols-2 gap-6 pt-2">
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+              <div>
+                <h4 class="font-semibold text-on-surface">Quality Natural Stone</h4>
+                <p class="text-sm text-on-surface-variant">Quarried from the world's premier deposits.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+              <div>
+                <h4 class="font-semibold text-on-surface">Precision Cutting</h4>
+                <p class="text-sm text-on-surface-variant">Millimeter-accurate bespoke dimensions.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+              <div>
+                <h4 class="font-semibold text-on-surface">Multiple Sizes Available</h4>
+                <p class="text-sm text-on-surface-variant">Standard formats and custom large slabs.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+              <div>
+                <h4 class="font-semibold text-on-surface">Reliable Supply</h4>
+                <p class="text-sm text-on-surface-variant">Consistent fulfillment for large architectural sites.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-6 relative">
+          <div class="w-full h-[450px] bg-cover bg-center shadow-xl overflow-hidden" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDohP9ZFWJosWG7HFeO8Goy5Pi845iGAYZIbebRXkMWe2pLvBFHUA-paEohA8XBLcSW-6szKuAWY7RAyt_vroB-N_J0fyaeM6Ny1Cz4YvUmj3LfMxkFX5kwnAHBX4CpAfXFxaOuUTaTSaJ7I91DJNJGstCsUU6eXrLrG4ALssW25fOShUijymygesOVqZXEAWCqJ4GgBaCKePdpanZg3lYfcAXkRM1_AdVy3NzkJuOW5M0EInKy0VlKLQ')"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2.5 EXCLUSIVE MONOLITHIC SPECIMEN: DUAL SLAB SHOWCASE (FRONT & BACK VIEW) -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 py-16" id="slab-specimen">
+      <div class="bg-surface-container p-8 lg:p-14 border border-outline-variant/30">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+          <div>
+            <span class="text-xs uppercase font-semibold text-secondary tracking-widest">Natural Quarry Specimen &bull; Block #23</span>
+            <h2 class="font-headline text-3xl lg:text-4xl text-on-surface mt-1">Radha Rosa Monolith Slabs &bull; Front &amp; Back Dual View</h2>
+            <p class="text-sm text-on-surface-variant mt-2 font-light">Direct gangsaw sliced veined natural stone. Both sides photographed together for book-matching and architectural facade alignment.</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider bg-secondary-container text-on-secondary-container">
+              <span class="material-symbols-outlined text-[16px]">compare_arrows</span>
+              Dual Sided Bookmatch Pair
+            </span>
+          </div>
+        </div>
+
+        <!-- TWO PHOTOS SIDE-BY-SIDE IN THE DESIGNATED SPOT -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+          <!-- Photo 1: Front View (फ्रंट व्यू) -->
+          <div class="bg-surface-container-lowest p-6 border border-outline-variant/30 shadow-sm flex flex-col justify-between group hover:border-primary transition-all">
+            <div class="relative overflow-hidden mb-4 bg-surface-container-low flex items-center justify-center min-h-[440px]">
+              <img src="images/slab_front_view.jpg" alt="Radha Stone Rosa Slab - फ्रंट व्यू (Front View)" class="w-full h-auto max-h-[540px] object-contain transition-transform duration-500 group-hover:scale-[1.02]">
+              <div class="absolute top-4 left-4 bg-primary text-on-primary text-xs px-3.5 py-1.5 font-semibold uppercase tracking-wider flex items-center gap-1.5 shadow-md">
+                <span class="material-symbols-outlined text-[14px]">view_in_ar</span>
+                फ्रंट व्यू &bull; Front View
+              </div>
+              <div class="absolute bottom-4 right-4 bg-black/85 text-white text-xs px-3 py-1 font-semibold tracking-wider">
+                Quarry Mark: #23 (Face A)
+              </div>
+            </div>
+            <div class="border-t border-outline-variant/30 pt-4">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-headline text-xl text-on-surface">फ्रंट व्यू (Front Face)</h4>
+                <span class="text-xs text-secondary font-semibold uppercase tracking-wider">Block Reference #23</span>
+              </div>
+              <p class="text-xs text-on-surface-variant leading-relaxed">
+                Primary cut face displaying authentic diamond gangsaw striations, raw mineral luster, and signature quarry block #23 markings.
+              </p>
+            </div>
+          </div>
+
+          <!-- Photo 2: Back View (बैक व्यू) -->
+          <div class="bg-surface-container-lowest p-6 border border-outline-variant/30 shadow-sm flex flex-col justify-between group hover:border-primary transition-all">
+            <div class="relative overflow-hidden mb-4 bg-surface-container-low flex items-center justify-center min-h-[440px]">
+              <img src="images/slab_back_view.jpg" alt="Radha Stone Rosa Slab - बैक व्यू (Back View)" class="w-full h-auto max-h-[540px] object-contain transition-transform duration-500 group-hover:scale-[1.02]">
+              <div class="absolute top-4 left-4 bg-secondary text-on-secondary text-xs px-3.5 py-1.5 font-semibold uppercase tracking-wider flex items-center gap-1.5 shadow-md">
+                <span class="material-symbols-outlined text-[14px]">flip</span>
+                बैक व्यू &bull; Back View
+              </div>
+              <div class="absolute bottom-4 right-4 bg-black/85 text-white text-xs px-3 py-1 font-semibold tracking-wider">
+                Reverse Face: Bookmatch
+              </div>
+            </div>
+            <div class="border-t border-outline-variant/30 pt-4">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-headline text-xl text-on-surface">बैक व्यू (Back Face)</h4>
+                <span class="text-xs text-secondary font-semibold uppercase tracking-wider">Reverse Bookmatch</span>
+              </div>
+              <p class="text-xs text-on-surface-variant leading-relaxed">
+                Reverse mirrored cut face revealing dense rose-quartz pigmentation and expansive calcite cloud networks for symmetrical book-match cladding.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Specs & Actions Bar -->
+        <div class="bg-surface-container-lowest p-6 lg:p-8 border border-outline-variant/20 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 flex-1">
+            <div>
+              <span class="text-xs text-secondary uppercase font-semibold">Block Reference</span>
+              <p class="text-base font-semibold text-on-surface">Mark #23 Monolith</p>
+            </div>
+            <div>
+              <span class="text-xs text-secondary uppercase font-semibold">Surface Finish</span>
+              <p class="text-base font-semibold text-on-surface">Raw Gangsaw Honed</p>
+            </div>
+            <div>
+              <span class="text-xs text-secondary uppercase font-semibold">Thickness Options</span>
+              <p class="text-base font-semibold text-on-surface">18mm &bull; 20mm &bull; 30mm</p>
+            </div>
+            <div>
+              <span class="text-xs text-secondary uppercase font-semibold">Bookmatch Alignment</span>
+              <p class="text-base font-semibold text-on-surface">Mirrored A/B Veining</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap items-center gap-4">
+            <a href="#quote" class="bg-primary text-on-primary px-6 py-3 text-xs font-semibold uppercase tracking-wider hover:bg-secondary transition-colors whitespace-nowrap">
+              Inquire This Exact Slab
+            </a>
+            <a href="https://wa.me/919414967074?text=Hello%20Radha%20Stone%20Gangsa,%20I%20am%20interested%20in%20Rosa%20Slab%20Block%2023%20(Front%20and%20Back%20View)" target="_blank" rel="noopener" class="border border-primary text-primary px-6 py-3 text-xs font-semibold uppercase tracking-wider hover:bg-primary hover:text-on-primary transition-colors flex items-center gap-2 whitespace-nowrap">
+              <span class="material-symbols-outlined text-[18px]">chat</span>
+              WhatsApp (+91 94149 67074)
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. OUR STONE COLLECTION -->
+    <section class="bg-surface-container-low py-20" id="collection">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+          <div>
+            <span class="text-xs uppercase font-semibold text-secondary tracking-widest">Catalog</span>
+            <h2 class="font-headline text-3xl lg:text-4xl text-on-surface mt-1">Our Stone Collection</h2>
+          </div>
+          <!-- Category Chips -->
+          <div class="flex flex-wrap gap-2">
+            <button class="bg-primary text-on-primary px-4 py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors">All</button>
+            <button class="bg-surface-container hover:bg-surface-container-high text-on-surface px-4 py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors">Flooring Stone</button>
+            <button class="bg-surface-container hover:bg-surface-container-high text-on-surface px-4 py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors">Wall Stone</button>
+            <button class="bg-surface-container hover:bg-surface-container-high text-on-surface px-4 py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors">Outdoor</button>
+            <button class="bg-surface-container hover:bg-surface-container-high text-on-surface px-4 py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors">Custom Cut</button>
+          </div>
+        </div>
+
+        <!-- Product Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Card 1: Rosa Corallo Front View (User's Photo) -->
+          <div class="bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between border border-outline-variant/20">
+            <div>
+              <div class="w-full h-72 bg-cover bg-center" style="background-image: url('images/slab_front_view.jpg')"></div>
+              <div class="p-5">
+                <span class="text-xs uppercase font-semibold text-secondary">Block #23 &bull; Face A</span>
+                <h3 class="font-headline text-xl text-on-surface mt-1 mb-2">Rosa Corallo (फ्रंट व्यू)</h3>
+                <p class="text-xs text-on-surface-variant mb-4">Direct factory cut front face with quarry mark #23. Rich natural plum and earthy rose tones with white calcite veins.</p>
+                <div class="text-xs font-semibold text-on-surface mb-2">Thickness: 20mm &bull; 30mm</div>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <a class="w-full block text-center border border-primary text-primary py-2 text-xs font-semibold uppercase tracking-wider hover:bg-primary hover:text-on-primary transition-colors" href="#quote">Request a Quote</a>
+            </div>
+          </div>
+
+          <!-- Card 2: Rosa Corallo Back View (User's Photo) -->
+          <div class="bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between border border-outline-variant/20">
+            <div>
+              <div class="w-full h-72 bg-cover bg-center" style="background-image: url('images/slab_back_view.jpg')"></div>
+              <div class="p-5">
+                <span class="text-xs uppercase font-semibold text-secondary">Block #23 &bull; Bookmatch</span>
+                <h3 class="font-headline text-xl text-on-surface mt-1 mb-2">Rosa Corallo (बैक व्यू)</h3>
+                <p class="text-xs text-on-surface-variant mb-4">Reverse book-matched face showing symmetrical mirror veining. Ideal for grand luxury feature walls and bookmatch floors.</p>
+                <div class="text-xs font-semibold text-on-surface mb-2">Thickness: 20mm &bull; 30mm</div>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <a class="w-full block text-center border border-primary text-primary py-2 text-xs font-semibold uppercase tracking-wider hover:bg-primary hover:text-on-primary transition-colors" href="#quote">Request a Quote</a>
+            </div>
+          </div>
+
+          <!-- Card 3: Calacatta Oro Marble -->
+          <div class="bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between border border-outline-variant/20">
+            <div>
+              <div class="w-full h-72 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD1Oe93JBmyxEUBCGEcYyiYDzZhBF7GB3f4saxg9oD8zFtJuf9VE4SxQWb475iS8JjKcGMcXE11mUJMmU2vqoozjdYIIHh5RSY4wzO99wQucoDVQWo7ezQ79LInEuvsDAfm5OUROxfvopvnN2tMTyLViYJRr79WoqS-UD36o9Y4YfJ6ZRaecHViAIrmF141aJqM2ofYV3t_wvmifUGi9cmWH2AdbqDGdQxDBYCg_hkgeSRSI03MVucvWg')"></div>
+              <div class="p-5">
+                <span class="text-xs uppercase font-semibold text-secondary">Flooring &amp; Wall</span>
+                <h3 class="font-headline text-xl text-on-surface mt-1 mb-2">Calacatta Oro Marble</h3>
+                <p class="text-xs text-on-surface-variant mb-4">Luxurious white marble with pronounced golden-grey veins, ideal for grand living spaces and statement book-matched flooring.</p>
+                <div class="text-xs font-semibold text-on-surface mb-2">Sizes: 60x60cm &bull; Custom Slabs</div>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <a class="w-full block text-center border border-primary text-primary py-2 text-xs font-semibold uppercase tracking-wider hover:bg-primary hover:text-on-primary transition-colors" href="#quote">Request a Quote</a>
+            </div>
+          </div>
+
+          <!-- Card 4: Roman Travertine -->
+          <div class="bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between border border-outline-variant/20">
+            <div>
+              <div class="w-full h-72 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD2watmUZ5D6bF97LVpSc_kEjjJTSa9X9LYaXMtkA7TxN8ZGSQM61E9rpTaKvzxlzUdElg_rYabyg4iCK5rnXceY6sopuOS4GF5hrFmeC9ZAIDF3PsgcoybLdgJbInAQfAhDHDX_E7jCm3LinwD2Rwy6_Vcc9sCHCqTWoGsrnGhATNTONqZgtNnBXtDcm_LJhHb3kCl5oDTPuDTVW9uMKHiXdmIdZXYZjIHkRjrFQjCG3IrLgga8vOBxg')"></div>
+              <div class="p-5">
+                <span class="text-xs uppercase font-semibold text-secondary">Outdoor &amp; Facade</span>
+                <h3 class="font-headline text-xl text-on-surface mt-1 mb-2">Roman Travertine</h3>
+                <p class="text-xs text-on-surface-variant mb-4">Classic warm beige limestone with enduring textural depth, highly durable for exterior facades and terrace flooring.</p>
+                <div class="text-xs font-semibold text-on-surface mb-2">Sizes: 60x40cm &bull; French Pattern</div>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <a class="w-full block text-center border border-primary text-primary py-2 text-xs font-semibold uppercase tracking-wider hover:bg-primary hover:text-on-primary transition-colors" href="#quote">Request a Quote</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. STONE CUTTING & BESPOKE SIZES -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 py-20" id="custom-cutting">
+      <div class="bg-surface-container p-8 lg:p-14 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center border border-outline-variant/20">
+        <div class="lg:col-span-7 space-y-6">
+          <span class="text-xs uppercase font-semibold text-secondary tracking-widest">Bespoke Engineering</span>
+          <h2 class="font-headline text-3xl lg:text-4xl text-on-surface">Cut to Your Required Size</h2>
+          <p class="text-lg text-on-surface-variant font-light leading-relaxed">
+            Standard dimensions rarely capture the vision of exceptional architecture. Our advanced gangsaw bridge cutting facilities allow us to fulfill exact architectural specifications down to the millimeter—whether for complex radial staircases, oversized paving tiles, or custom vanity tops.
+          </p>
+          <ul class="space-y-3 text-on-surface text-base">
+            <li class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-secondary">straighten</span>
+              <span>Custom thickness calibration (from 10mm to 100mm+)</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-secondary">architecture</span>
+              <span>Precision mitered edges, bullnose, and bevel finishes</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-secondary">grid_view</span>
+              <span>Tailored module sizing to eliminate waste on-site</span>
+            </li>
+          </ul>
+        </div>
+        <div class="lg:col-span-5">
+          <div class="w-full h-80 bg-cover bg-center shadow-inner border border-outline-variant/30" style="background-image: url('images/gangsaw_cut_hd.png')"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. WHY CHOOSE RADHA STONE GANGSA -->
+    <section class="bg-surface-container-low py-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="text-xs uppercase font-semibold text-secondary tracking-widest">Our Advantages</span>
+          <h2 class="font-headline text-3xl lg:text-4xl text-on-surface mt-1">Why Choose Radha Stone Gangsa</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-surface-container-lowest p-6 shadow-sm border border-outline-variant/10">
+            <div class="w-12 h-12 bg-secondary-container flex items-center justify-center text-on-secondary-container mb-4">
+              <span class="material-symbols-outlined">diamond</span>
+            </div>
+            <h3 class="font-semibold text-lg text-on-surface mb-2">Premium Quality Stone</h3>
+            <p class="text-sm text-on-surface-variant">Hand-selected blocks guaranteeing superior mineral density and timeless aesthetics.</p>
+          </div>
+
+          <div class="bg-surface-container-lowest p-6 shadow-sm border border-outline-variant/10">
+            <div class="w-12 h-12 bg-secondary-container flex items-center justify-center text-on-secondary-container mb-4">
+              <span class="material-symbols-outlined">architecture</span>
+            </div>
+            <h3 class="font-semibold text-lg text-on-surface mb-2">High Precision Gangsaw</h3>
+            <p class="text-sm text-on-surface-variant">3,200mm rotary diamond saws and hydro-cooling ensuring sub-millimeter accuracy.</p>
+          </div>
+
+          <div class="bg-surface-container-lowest p-6 shadow-sm border border-outline-variant/10">
+            <div class="w-12 h-12 bg-secondary-container flex items-center justify-center text-on-secondary-container mb-4">
+              <span class="material-symbols-outlined">aspect_ratio</span>
+            </div>
+            <h3 class="font-semibold text-lg text-on-surface mb-2">Multiple Sizes</h3>
+            <p class="text-sm text-on-surface-variant">Comprehensive inventory of standard tiles, oversized slabs, and modular formats.</p>
+          </div>
+
+          <div class="bg-surface-container-lowest p-6 shadow-sm border border-outline-variant/10">
+            <div class="w-12 h-12 bg-secondary-container flex items-center justify-center text-on-secondary-container mb-4">
+              <span class="material-symbols-outlined">tune</span>
+            </div>
+            <h3 class="font-semibold text-lg text-on-surface mb-2">Custom Requirements</h3>
+            <p class="text-sm text-on-surface-variant">Tailored finishes, specialized profiling, and exact architectural blueprints executed to order.</p>
+          </div>
+
+          <div class="bg-surface-container-lowest p-6 shadow-sm border border-outline-variant/10">
+            <div class="w-12 h-12 bg-secondary-container flex items-center justify-center text-on-secondary-container mb-4">
+              <span class="material-symbols-outlined">inventory_2</span>
+            </div>
+            <h3 class="font-semibold text-lg text-on-surface mb-2">Bulk Orders</h3>
+            <p class="text-sm text-on-surface-variant">Scalable production capacity for commercial towers, residential developments, and estates.</p>
+          </div>
+
+          <div class="bg-surface-container-lowest p-6 shadow-sm border border-outline-variant/10">
+            <div class="w-12 h-12 bg-secondary-container flex items-center justify-center text-on-secondary-container mb-4">
+              <span class="material-symbols-outlined">local_shipping</span>
+            </div>
+            <h3 class="font-semibold text-lg text-on-surface mb-2">Reliable Supply</h3>
+            <p class="text-sm text-on-surface-variant">Secure wooden crating and scheduled logistics ensuring safe arrival at your construction site.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. ARCHITECTURAL APPLICATIONS -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 py-20" id="applications">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs uppercase font-semibold text-secondary tracking-widest">Endless Possibilities</span>
+        <h2 class="font-headline text-3xl lg:text-4xl text-on-surface mt-1">Architectural Applications</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- App 1 -->
+        <div class="relative h-72 overflow-hidden group shadow-md">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCHGV7sAJBhx7CkmJi3vBH2cHw3bzKVN1NrT3GPnv5UeW96qIZAHztTO7siH8i-YnZR6zSFIZzqIzu4QSYnaxSzLfkJ72mwc6Cq7PMDMpbcr7FsHwY_PThyugkMCZI0-O0AaWMTY47uWbKgzHKOaah1ULAAVuJMWPizh1m-kD0037Ib_FFj0t29gRapeEtQL2X_4tOK0l-r8r6aPQgexvgEss4vA-OOYy5khlspdd3NWqmicIVA_c4hYw')"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-6 text-on-primary">
+            <h3 class="font-headline text-2xl">Home Flooring</h3>
+            <p class="text-sm text-outline-variant">Seamless luxury underfoot</p>
+          </div>
+        </div>
+
+        <!-- App 2 -->
+        <div class="relative h-72 overflow-hidden group shadow-md">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCIIlEeC90mWDDwJZIr4NhnhB7EQu7Nr5eNRpRheelyUhbpUOdkOC1awnM2Rv6FSzjL39KhPxIuJvovlNrt-jQDTVDKNNEr1aRSJdn1HTIsPU0CuB_TdhJX0WfeDi6jg2Xur4JxYtsu299j0mUwkrWd6_BWZspnXdOaKle5nE9uy6SguKZvCHhbT4BqUtOD050ZrjoDD4LauMWylbetNKlH-bZMTgTqYDp8uP430KpZZce9NKgXJ9S_2A')"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-6 text-on-primary">
+            <h3 class="font-headline text-2xl">House Exterior</h3>
+            <p class="text-sm text-outline-variant">Enduring facade stonework</p>
+          </div>
+        </div>
+
+        <!-- App 3 -->
+        <div class="relative h-72 overflow-hidden group shadow-md">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA4fiuWHYig9Yh6MC3XpMPjBm7m3yF1Lh0uxD5mNZfMQkDfJx81ubgT2iJrLvh9LCheCU-lXrDQrd_nwnEIgTe8QfcD46Z-EkaeqrNiQwUvmA8L7-snA8upBpr07LmDTQSAtYjyEtC8bp8BSvrrNtxonhIpfIJCWoDjRevdHKMKVr-T1to9HNkcrdgleEqUk-XEbuE4KpQ2D8pTqJLPsG9DeuAOFD7-v-OGiPZE3A3D8ScEoviRRNccYg')"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-6 text-on-primary">
+            <h3 class="font-headline text-2xl">Garden Pathways</h3>
+            <p class="text-sm text-outline-variant">Natural paths through landscape</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. PROJECT GALLERY -->
+    <section class="bg-surface-container py-20" id="gallery">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="text-xs uppercase font-semibold text-secondary tracking-widest">Portfolio</span>
+          <h2 class="font-headline text-3xl lg:text-4xl text-on-surface mt-1">Completed Architectural Spaces</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="space-y-6">
+            <div class="w-full h-96 bg-cover bg-center shadow-sm" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDsgcfXcHBRenLdVc_K4f3LXJ2d3cZO2yXFN4rriF7qWzHwcRsE38l0-FrwvJdhqrkeWsqXlBsJduuF2YtKblxPKgHQMahWOlNae_0KjVpP4L1HAZi9WuhdmNGs_q5quUKReWtEmXp2SxHzNeXynziGHlxi94u2-5I8jJob3XmbJuuBW6CYPMYTFJ8K457BuXR8tvHn316x_-B1MBlyXVrSL8wE4CVnwqxdCt1l2TYt9Wx4EbBL1MVDYA')"></div>
+            <div class="w-full h-64 bg-cover bg-center shadow-sm" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCPHOchNAzGRiN_n5A7K0QPuvad-EHRRFAHeiEutAVehxy1WAHbZHPZnOfL2fetHvUFoNBbA_90x8d4wGPjm2pjKwrlw60vGyJsEARKgacSAvPKGZuEGnvtL3oynvP48z8LtYF26o7q4K9w7RtnAYyyUGW2kBCqHq_XQLMhCxNdUJidVgSpkWTX2V3OYVMAy8DhB-ar5Eun8CEOhc-0gcY1SW0Oo6xlR5iDmRml25sXWnQ-dmAyBfDl8Q')"></div>
+          </div>
+          <div class="space-y-6">
+            <div class="w-full h-64 bg-cover bg-center shadow-sm" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBwpfHa0LLkA5L6L49fC1pA0ODqjqKOGTtShz7ksbPhUGH3fhf4eIa-ZrQBFZNXXkj_SygP7C62HMoJ04XT0EClDB25Ym53JZfp39_Bf-xBfW7Dn-kTW0YbKUKKnAYJOtNUukz7T_g8W9NHHo3yFwRkZigZ46gsUq07sZBOSo-5W0WSdM6N6KNw4wgYw4aKAPyt3v3zbHB349-3_-owin1frDgT7pWA305P4BCRAyT-vD1QPfuIvaaorg')"></div>
+            <div class="w-full h-96 bg-cover bg-center shadow-sm" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuANJ0u0r2AhSrleXQ80kMeWir3vUGHwet6ys8MyXbBaR5zxAd-S2jC9n4Om178gZWufwHYemerBuqWFAu0zosXMyZpMemzJ2KgRdGXOl1YFEcPLLpowmHceaXHhDBbd9KddeEwHGSw1Az4zUKfs_6PkHXWG97XrKD4JyQdK2zDuIzGDZMW15hdNFeYV_HSyWaDbnzhfP5CnFF57UcHfNjImUGutjT9gUMCqeie6-Q8FXpwnJ-3dwCUlgg')"></div>
+          </div>
+          <div class="space-y-6">
+            <div class="w-full h-96 bg-cover bg-center shadow-sm" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCheRZXThnC6Hj0NK1-gmmz9mBBlPfISBAoabeY-PTMAxoAencjX84gw7bbdrwL6qsUL9ssd2W8xdHrW7aZGg7_jK8y4iVYnSz1sXRxcyoH2eE21kZ9k64U6HPisXnlyqm95H7n3I8zUWXOH3lO8AJ2vl29ERrqrumTqNqTEMnQ2_mN1pwWsh2SIS2XHhG9cUD2l9Mx_RYGt477jeYnG17WsU9DF3nnTJaZyZpFJxsC_oc7bMIzLlEDPQ')"></div>
+            <div class="w-full h-64 bg-cover bg-center shadow-sm" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBSc2bGRnWi91Uy2f47bxq79vDH_PojLrPGlvAVRbKxbN7EzLim-lKSzD4o7dY8RpnXi7osAfia8LgTtAzVZutNxONSH7rUAscL7K-ko6U3jUZakTMvDVjZYLvXcOjETScZvU0MUHSVhpau-Cn8sB1MNc8KZKfV7JcuW0ilWUyY21Al3xKRQqAkKDhugoWwgP_ZoBryMVwEHIsrkkNvv5j1QqdXii8Droti9YrNyCPF1mtp6gbsKXyqBw')"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. HOW WE WORK -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 py-20">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs uppercase font-semibold text-secondary tracking-widest">Process</span>
+        <h2 class="font-headline text-3xl lg:text-4xl text-on-surface mt-1">How We Work</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-surface-container-low p-6 border border-outline-variant/10">
+          <span class="font-headline text-4xl font-light text-secondary">01</span>
+          <h3 class="font-semibold text-on-surface mt-3 mb-1">Choose Your Stone</h3>
+          <p class="text-sm text-on-surface-variant">Select from our exclusive collection of marbles, travertines, limestones, and quartzites.</p>
+        </div>
+        <div class="bg-surface-container-low p-6 border border-outline-variant/10">
+          <span class="font-headline text-4xl font-light text-secondary">02</span>
+          <h3 class="font-semibold text-on-surface mt-3 mb-1">Select Required Size</h3>
+          <p class="text-sm text-on-surface-variant">Specify standard modular dimensions or submit custom architectural blueprints.</p>
+        </div>
+        <div class="bg-surface-container-low p-6 border border-outline-variant/10">
+          <span class="font-headline text-4xl font-light text-secondary">03</span>
+          <h3 class="font-semibold text-on-surface mt-3 mb-1">Gangsaw Cutting</h3>
+          <p class="text-sm text-on-surface-variant">Our craftsmen cut, calibrate, and finish each piece to sub-millimeter tolerances.</p>
+        </div>
+        <div class="bg-surface-container-low p-6 border border-outline-variant/10">
+          <span class="font-headline text-4xl font-light text-secondary">04</span>
+          <h3 class="font-semibold text-on-surface mt-3 mb-1">Delivery &amp; Fulfillment</h3>
+          <p class="text-sm text-on-surface-variant">Securely crated and shipped directly to your residential or commercial site.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. BULK & WHOLESALE CONTRACTS -->
+    <section class="bg-primary text-on-primary py-20">
+      <div class="max-w-5xl mx-auto px-6 text-center space-y-6">
+        <span class="text-xs uppercase font-semibold text-secondary-container tracking-widest">Trade &amp; Contract</span>
+        <h2 class="font-headline text-4xl lg:text-5xl text-surface-bright">Looking for Stone in Bulk?</h2>
+        <p class="text-lg text-outline-variant max-w-2xl mx-auto font-light leading-relaxed">
+          We partner directly with architects, general contractors, developers, and stone distributors worldwide. Benefit from tier-one factory pricing, dedicated project management, and guaranteed supply consistency.
+        </p>
+        <div class="pt-2">
+          <a class="inline-block bg-surface text-on-surface px-8 py-3.5 text-xs font-semibold uppercase tracking-wider hover:bg-surface-variant transition-colors shadow-lg" href="#quote">
+            Contact Us for Bulk Pricing
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. GET A QUOTE / CONSULTATION -->
+    <section class="max-w-4xl mx-auto px-6 py-20" id="quote">
+      <div class="text-center mb-12">
+        <span class="text-xs uppercase font-semibold text-secondary tracking-widest">Inquiries</span>
+        <h2 class="font-headline text-3xl lg:text-4xl text-on-surface mt-1">Get a Quote / Consultation</h2>
+        <p class="text-base text-on-surface-variant mt-2">Tell us about your project specifications and our stone experts will respond within 24 hours.</p>
+      </div>
+      <form class="bg-surface-container-low p-8 lg:p-12 shadow-sm space-y-6 border border-outline-variant/20" onsubmit="submitForm(event)">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-xs uppercase font-semibold tracking-wider text-on-surface mb-2">Name *</label>
+            <input class="w-full bg-[#F7F5F0] border-b border-outline px-4 py-3 text-on-surface focus:outline-none focus:border-primary transition-colors text-sm" placeholder="John Doe" type="text" required/>
+          </div>
+          <div>
+            <label class="block text-xs uppercase font-semibold tracking-wider text-on-surface mb-2">Phone Number *</label>
+            <input class="w-full bg-[#F7F5F0] border-b border-outline px-4 py-3 text-on-surface focus:outline-none focus:border-primary transition-colors text-sm" placeholder="+91 98765 43210" type="tel" required/>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-xs uppercase font-semibold tracking-wider text-on-surface mb-2">WhatsApp Number</label>
+            <input class="w-full bg-[#F7F5F0] border-b border-outline px-4 py-3 text-on-surface focus:outline-none focus:border-primary transition-colors text-sm" placeholder="+91 98765 43210" type="tel"/>
+          </div>
+          <div>
+            <label class="block text-xs uppercase font-semibold tracking-wider text-on-surface mb-2">Required Stone *</label>
+            <select class="w-full bg-[#F7F5F0] border-b border-outline px-4 py-3 text-on-surface focus:outline-none focus:border-primary transition-colors text-sm">
+              <option>Rosa Corallo Monolith (Featured)</option>
+              <option>Calacatta Oro Marble</option>
+              <option>Roman Travertine</option>
+              <option>Makrana Pure White</option>
+              <option>Black Galaxy Granite</option>
+              <option>Custom Slabs / Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div>
+            <label class="block text-xs uppercase font-semibold tracking-wider text-on-surface mb-2">Required Size</label>
+            <input class="w-full bg-[#F7F5F0] border-b border-outline px-4 py-3 text-on-surface focus:outline-none focus:border-primary transition-colors text-sm" placeholder="e.g. 60x60cm or Slabs" type="text"/>
+          </div>
+          <div>
+            <label class="block text-xs uppercase font-semibold tracking-wider text-on-surface mb-2">Quantity (sqm / sqft)</label>
+            <input class="w-full bg-[#F7F5F0] border-b border-outline px-4 py-3 text-on-surface focus:outline-none focus:border-primary transition-colors text-sm" placeholder="e.g. 1,500 sq.ft" type="text"/>
+          </div>
+          <div>
+            <label class="block text-xs uppercase font-semibold tracking-wider text-on-surface mb-2">Delivery Location *</label>
+            <input class="w-full bg-[#F7F5F0] border-b border-outline px-4 py-3 text-on-surface focus:outline-none focus:border-primary transition-colors text-sm" placeholder="City, State" type="text" required/>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs uppercase font-semibold tracking-wider text-on-surface mb-2">Message / Project Details</label>
+          <textarea class="w-full bg-[#F7F5F0] border-b border-outline px-4 py-3 text-on-surface focus:outline-none focus:border-primary transition-colors text-sm" placeholder="Describe your project, thickness requirements, or timeline..." rows="3"></textarea>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-end gap-4 pt-2">
+          <button class="bg-primary text-on-primary px-8 py-3 text-xs font-semibold uppercase tracking-wider hover:bg-secondary transition-colors" type="submit" id="btn-submit">
+            Get a Quote
+          </button>
+          <a class="border border-primary text-primary px-8 py-3 text-xs font-semibold uppercase tracking-wider hover:bg-primary hover:text-on-primary transition-colors flex items-center gap-2" href="https://wa.me/919414967074?text=Hello%20Radha%20Stone%20Gangsa,%20I%20would%20like%20to%20inquire%20about%20your%20natural%20stone%20slabs" target="_blank" rel="noopener">
+            <span class="material-symbols-outlined text-[18px]">chat</span>
+            WhatsApp: +91 94149 67074
+          </a>
+        </div>
+        <p id="form-feedback" class="text-green-700 text-sm font-semibold text-center hidden">&check; Thank you! Your request has been transmitted. Our stone specialist will contact you shortly.</p>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- 11. FOOTER -->
+  <footer class="w-full bg-surface-container-low py-16 border-t border-outline-variant/30">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+      <div>
+        <h4 class="font-headline text-xl text-on-surface mb-4 tracking-wide uppercase">Radha Stone Gangsa</h4>
+        <p class="text-sm text-on-surface-variant mb-4 leading-relaxed">Architectural natural stone, high-capacity gangsaw slicing, and bespoke masonry crafted for uncompromised permanence.</p>
+      </div>
+      <div>
+        <h4 class="font-headline text-lg text-on-surface mb-4 tracking-wide uppercase">Collections</h4>
+        <ul class="space-y-2 text-sm text-on-surface-variant">
+          <li><a class="hover:text-on-surface" href="#collection">Rosa Corallo Veined</a></li>
+          <li><a class="hover:text-on-surface" href="#collection">Calacatta Oro Marble</a></li>
+          <li><a class="hover:text-on-surface" href="#collection">Roman Travertine</a></li>
+          <li><a class="hover:text-on-surface" href="#collection">Makrana Heritage White</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-headline text-lg text-on-surface mb-4 tracking-wide uppercase">Gangsaw Yard</h4>
+        <p class="text-sm text-on-surface-variant mb-1">Industrial Stone Processing Zone</p>
+        <p class="text-sm text-on-surface-variant mb-1">Kishangarh - Makrana Highway</p>
+        <p class="text-sm text-on-surface-variant mb-1">Rajasthan, India</p>
+        <div class="mt-3 pt-2 border-t border-outline-variant/30">
+          <span class="text-xs uppercase text-secondary font-semibold block tracking-wider">Direct WhatsApp / Call:</span>
+          <a href="tel:+919414967074" class="text-base text-on-surface font-semibold hover:text-secondary block mt-0.5">+91 94149 67074</a>
+          <a href="https://wa.me/919414967074?text=Hello%20Radha%20Stone%20Gangsa" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-xs text-green-700 font-semibold mt-1 hover:underline">
+            <span class="material-symbols-outlined text-[16px]">chat</span>
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-headline text-lg text-on-surface mb-4 tracking-wide uppercase">Inquiries</h4>
+        <p class="text-sm text-on-surface-variant mb-4">Schedule a private yard viewing or request architectural specifications.</p>
+        <a class="inline-block border border-primary text-primary px-5 py-2.5 text-xs font-semibold uppercase tracking-wider hover:bg-primary hover:text-on-primary transition-colors" href="#quote">Request Consultation</a>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 pt-8 border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between text-xs text-on-surface-variant">
+      <p>&copy; 2026 Radha Stone Gangsa. All rights reserved.</p>
+      <div class="flex space-x-6 mt-4 sm:mt-0">
+        <a class="hover:text-on-surface" href="#">Privacy Policy</a>
+        <a class="hover:text-on-surface" href="#">Terms of Supply</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Quick Connect Button -->
+  <a href="https://wa.me/919414967074?text=Hello%20Radha%20Stone%20Gangsa,%20I%20am%20interested%20in%20your%20natural%20stone%20slabs" target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-3.5 shadow-2xl hover:bg-[#20ba5a] transition-all flex items-center gap-2 group hover:scale-105" title="Chat on WhatsApp +91 94149 67074">
+    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.06-2.146-.541-1.748-.724-2.883-2.484-2.97-2.6-.088-.116-.708-.941-.708-1.792s.448-1.27.607-1.444c.159-.175.348-.219.463-.219.116 0 .232.001.333.007.106.005.249-.04.39.299.144.35.492 1.2.535 1.288.043.088.072.19.014.305-.058.115-.087.188-.173.289l-.26.308c-.088.102-.18.213-.077.391.103.178.459.758.985 1.226.678.604 1.249.791 1.427.879.178.088.283.074.388-.046.106-.119.456-.531.579-.714.122-.183.245-.152.41-.091.164.061 1.045.492 1.225.582.181.089.301.134.346.209.045.075.045.436-.099.841zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.434 5.176L2 22l4.981-1.396A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.067c-1.632 0-3.146-.479-4.425-1.306l-.317-.205-2.964.83.842-2.887-.225-.327A8.026 8.026 0 014 12c0-4.418 3.582-8.067 8-8.067 4.418 0 8 3.649 8 8.067 0 4.418-3.582 8.067-8 8.067z"/></svg>
+    <span class="hidden sm:inline text-xs font-bold uppercase tracking-wider">WhatsApp Us</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

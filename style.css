@@ -1,0 +1,320 @@
+/* ==========================================================================
+   RADHA STONE GANGSA - STITCH PRIMESTONE ARCHITECTURAL DESIGN SYSTEM
+   ========================================================================== */
+
+:root {
+  --surface: #fbf9f4;
+  --surface-dim: #dbdad5;
+  --surface-bright: #fbf9f4;
+  --surface-container-lowest: #ffffff;
+  --surface-container-low: #f5f3ee;
+  --surface-container: #f0eee9;
+  --surface-container-high: #eae8e3;
+  --surface-container-highest: #e4e2dd;
+  --on-surface: #1b1c19;
+  --on-surface-variant: #4d4541;
+  --outline: #7e7570;
+  --outline-variant: #cfc4be;
+  --primary: #171615;
+  --on-primary: #ffffff;
+  --primary-container: #2c2a29;
+  --on-primary-container: #95918f;
+  --secondary: #6b5c4d;
+  --on-secondary: #ffffff;
+  --secondary-container: #f1dcc9;
+  --on-secondary-container: #6f6051;
+  --font-headline: 'Newsreader', serif;
+  --font-body: 'Source Sans 3', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--surface);
+}
+
+body {
+  background-color: var(--surface);
+  color: var(--on-surface);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--surface);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--outline-variant);
+}
+
+/* ==========================================================================
+   100% TRANSPARENT NAVIGATION BAR (TOP TO BOTTOM)
+   ========================================================================== */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  background: transparent !important; /* Always 100% transparent from top to bottom */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  transition: border-color 0.3s ease, color 0.3s ease;
+  color: var(--on-surface);
+}
+
+.site-header .header-brand {
+  color: var(--on-surface);
+  transition: color 0.3s ease;
+}
+
+.site-header .nav-link {
+  color: var(--on-surface);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: all 0.25s ease;
+  position: relative;
+  padding: 0.25rem 0.5rem;
+}
+
+.site-header .nav-link:hover {
+  color: var(--primary);
+  opacity: 1;
+}
+
+/* State 1: Transparent Header over Video Playback */
+.site-header.video-mode {
+  background: transparent !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.site-header.video-mode .header-brand {
+  color: #ffffff;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.7);
+}
+
+.site-header.video-mode .nav-link {
+  color: #ffffff;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+.site-header.video-mode .nav-link:hover {
+  color: #ffffff;
+  opacity: 1;
+}
+
+/* State 2: Transparent Header over Content (Remains 100% Transparent from top to bottom) */
+.site-header.scrolled {
+  background: transparent !important; /* Pure transparent - zero solid color */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--on-surface);
+}
+
+.site-header.scrolled .header-brand {
+  color: var(--on-surface);
+  text-shadow: none;
+}
+
+.site-header.scrolled .nav-link {
+  color: var(--on-surface);
+  text-shadow: none;
+}
+
+.site-header.scrolled .nav-link:hover {
+  color: var(--secondary);
+  opacity: 1;
+}
+
+/* ==========================================================================
+   HERO VIDEO SECTION & WHITE INTRO OVERLAY
+   ========================================================================== */
+#cutting-video {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #000;
+}
+
+#stone-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Initial White / Bright Overlay with "Radha Stone Gangsa" */
+.intro-white-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(251, 249, 244, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s ease, visibility 0.8s;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+
+.intro-white-overlay.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: scale(1.02);
+}
+
+.intro-card {
+  text-align: center;
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.intro-tag {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  letter-spacing: 0.28em;
+  color: var(--secondary);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.intro-brand {
+  font-family: var(--font-headline);
+  font-size: clamp(2.8rem, 6.5vw, 5.2rem);
+  font-weight: 400;
+  color: var(--on-surface);
+  letter-spacing: 0.02em;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.intro-subtitle {
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+  max-width: 560px;
+  font-weight: 300;
+}
+
+.intro-scroll-prompt {
+  margin-top: 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.65rem 1.6rem;
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: 0 10px 25px rgba(23, 22, 21, 0.25);
+  transition: transform 0.2s;
+}
+
+.intro-scroll-prompt:hover {
+  transform: translateY(-2px);
+}
+
+.prompt-mouse {
+  width: 14px;
+  height: 22px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  padding-top: 3px;
+}
+
+.prompt-wheel {
+  width: 2px;
+  height: 5px;
+  background: #e5b869;
+  border-radius: 1px;
+  animation: prompt-scroll 1.4s infinite ease-out;
+}
+
+@keyframes prompt-scroll {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(6px); opacity: 0; }
+}
+
+/* ==========================================================================
+   PRODUCT VISUALS
+   ========================================================================== */
+.stone-visual {
+  height: 250px;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+}
+
+.stone-card:hover .stone-visual {
+  transform: scale(1.03);
+}
+
+.card-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.35rem 0.85rem;
+  background: rgba(23, 22, 21, 0.85);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  backdrop-filter: blur(8px);
+}
+
+.stone-rosa {
+  background-image: url('frames/ezgif-frame-200.jpg');
+}
+
+.stone-statuario {
+  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD1Oe93JBmyxEUBCGEcYyiYDzZhBF7GB3f4saxg9oD8zFtJuf9VE4SxQWb475iS8JjKcGMcXE11mUJMmU2vqoozjdYIIHh5RSY4wzO99wQucoDVQWo7ezQ79LInEuvsDAfm5OUROxfvopvnN2tMTyLViYJRr79WoqS-UD36o9Y4YfJ6ZRaecHViAIrmF141aJqM2ofYV3t_wvmifUGi9cmWH2AdbqDGdQxDBYCg_hkgeSRSI03MVucvWg');
+}
+
+.stone-galaxy {
+  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBJu1hrd8TUFK_6AFMC5sVntAaXc2YVrj46X1mCeb_tsA9EBqaUSSI27Qcvv1X1yiNoeoYmyvxC5Qhi8edsf-DLAU2Id1X6l67neN3sPK9fIwGgeKKAH0oqUoqbr4mJMPudQpbvEwuOGbyIGmNHvPBJwbVC6W-Wa8bhFnUP6yCA6g1QEeXbsPfKiR-PF5mhGS0FHmDjKj2PthDGbGT8CllSygD1TGOn4CEgHqJdvw6StQTxzrYRWoyhIg');
+}
+
+.stone-makrana {
+  background: radial-gradient(circle at 50% 50%, #ffffff 0%, #f1f5f9 60%, #e2e8f0 100%);
+}
+
+.stone-onyx {
+  background: radial-gradient(ellipse at 40% 60%, rgba(253, 224, 71, 0.9) 0%, rgba(217, 119, 6, 0.7) 50%, transparent 80%),
+              linear-gradient(110deg, #b45309 0%, #f59e0b 25%, #fef3c7 35%, #d97706 60%, #fbbf24 85%);
+}
+
+.stone-rainforest {
+  background: linear-gradient(130deg, #1c2e24 0%, #2f4e3c 35%, #78350f 38%, #365342 50%, #b45309 52%, #1a2e22 80%);
+}
+
+.hidden {
+  display: none !important;
+}
