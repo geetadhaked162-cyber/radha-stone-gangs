@@ -1,0 +1,19 @@
+{
+  "name": "radha-stone-gangsa",
+  "version": "1.0.0",
+  "description": "Radha Stone Gangsa - Luxury Architectural Natural Stone & Diamond Gangsaw Cutting Experience",
+  "main": "index.html",
+  "scripts": {
+    "start": "ruby -rwebrick -e 's = WEBrick::HTTPServer.new(:Port => 8000, :DocumentRoot => Dir.pwd); trap(\"INT\"){ s.shutdown }; s.start'",
+    "build": "echo 'Build complete'"
+  },
+  "keywords": [
+    "marble",
+    "gangsaw",
+    "stone",
+    "architecture",
+    "radha-stone"
+  ],
+  "author": "Radha Stone Gangsa",
+  "license": "MIT"
+}
